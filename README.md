@@ -1,7 +1,7 @@
 https://heroku.com/deploy?template=https://github.com/KINGS-AS/RDX_V2.git
 <div align="center"
 
-[![KING-AS](https://fontmeme.com/temporary/e07de252c73387f0abd8e7c66f0b45d2.png?size=100000)](https://github.com/KING-AS)
+
 
 
 
