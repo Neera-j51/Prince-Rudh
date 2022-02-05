@@ -1,8 +1,8 @@
 /* Amalser Bot
-Re-edit Amalser + chunkindepadayali
+Re-edit Amalser + KING-AS
 */
 
-const LizaMwol = require('../events');
+const rdxbot = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
@@ -17,7 +17,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-LizaMwol.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+rdxbot.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: Config.ALIVE_BUTTON }, type: 1},
@@ -26,7 +26,7 @@ LizaMwol.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (
       
       const buttonMessage = {
           contentText: '```'+Config.BOTV2+'\n\n```'+Config.ALIVEMSG+'\n',
-          footerText: 'ʟɪᴢᴀ ᴍᴡᴏʟ™ ',
+          footerText: 'ʀᴅx ᴠ𝟸™ ',
           buttons: buttons,
           headerType: 1
       }
