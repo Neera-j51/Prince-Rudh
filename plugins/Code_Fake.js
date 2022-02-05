@@ -1,5 +1,5 @@
 //codded by afnanplk
-// chunkindepadayali 
+// KING-AS
 
 const MyPnky = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
