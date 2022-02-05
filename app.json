@@ -8,7 +8,7 @@
     "success_url": "https://github.com/KINGS-AS/RDX_V2",
     "stack": "container",
     "env": {
-        "LIZA_SESSION": {
+        "CONNECTION_CODE": {
             "description": "Type here yours Asena Session.",
             "required": true
         },
