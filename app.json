@@ -58,7 +58,7 @@
         },
         "PM_BLOCK": {
 
-            "description": "Link Engelleme Sistemi. Link Blocking System.",
+            "description": "Link Blocking System.",
 
             "required": true,
 
