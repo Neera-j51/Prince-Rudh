@@ -11,12 +11,10 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     var respoimage = await axios.get(config.LIZA, { responseType: 'arraybuffer' })
 
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync('20210811_082543.jpg'), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync('https://telegra.ph/file/24f32f57035641a8698e4.jpg'), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
  
-*owner number wa.me/918137829228*
+*owner number wa.me/18254138025*
    
-*owner number wa.me/918075379950*
-
 
 *whatsapp group : https://chat.whatsapp.com/FVOdpPLaMvP24rIfTzCGof*
 
