@@ -1,5 +1,5 @@
 //codded by afnanplk
-// added chunkindepadayali 
+// added KING AS
 
 const config = require('../../config');
 const { DataTypes } = require('sequelize');
