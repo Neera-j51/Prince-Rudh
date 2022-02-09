@@ -61,7 +61,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/m
 await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         
-const array = ['Love','njan','pewer','poda','power','Wait','RDX','alive','coming','Ara','Bgm','bgm','group','entry','Sry','Sorry','Set']
+const array = ['Love','njan','pewer','poda','power','Wait','RDX','alive','coming','Ara','Bgm','bgm','group','entry','Sry','Sorry','Set','Hi']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -94,7 +94,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/men
 await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['Love','njan','pewer','poda','power','Wait','RDX','alive','coming','Ara','Bgm','bgm','group','entry','Sry','Sorry','Set']
+const array = ['Love','njan','pewer','poda','power','Wait','RDX','alive','coming','Ara','Bgm','bgm','group','entry','Sry','Sorry','Set','Hi']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -122,7 +122,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./media/stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['AS','Hlo','poda']
+const array = ['AS','Hlo','poda','Hi']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
