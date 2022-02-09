@@ -1,5 +1,5 @@
 // codded by afnanplk and
-// added chunkindepadayali 
+// added KING AS
 
 const config = require('../../config');
 const { DataTypes } = require('sequelize');
@@ -8,4 +8,3 @@ function _0x38f3(){var _0xfbcb77=['TEXT','define','13626880JyiIdX','STRING','54J
 
 
 
-//thise code can be copy pasted and used (with credit)
