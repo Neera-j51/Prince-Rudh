@@ -64,7 +64,7 @@ const convertToWav = file => {
 }
 
 Raashii.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
-    if (message.message.startsWith('Liza') && conf.LIZA_AI !== 'true') {        
+    if (message.message.startsWith('Liza') && conf.BOT_AI !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'
@@ -93,7 +93,7 @@ Raashii.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteComm
     }
 }));
 Raashii.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-        if (conf.LIZA_AI == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+        if (conf.BOT_AI == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
             if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
@@ -258,7 +258,7 @@ if (conf.LANG == 'ML') {
 }
 
 Raashii.addCommand({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
-    var pinky_status = `${conf.LIZA_AI}`
+    var pinky_status = `${conf.BOT_AI}`
     if (match[1] == 'on') {
         if (pinky_status == 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
@@ -266,7 +266,7 @@ Raashii.addCommand({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,d
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['LIZA_AI']: 'true'
+                    ['BOT_AI']: 'true'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
@@ -279,7 +279,7 @@ Raashii.addCommand({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,d
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['LIZA_AI']: 'false'
+                    ['BOT_AI']: 'false'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
