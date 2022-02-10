@@ -22,10 +22,10 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
 githublink : ```github.com/KINGS-AS/RDX_V2```
 
 
-*Developers*      
-| @PrinceRudh 😈 github.com/PrinceRudh
-| @Viz-zer 😈 github.com/Viz-Zer
-| @MrAxenzo 😈 github.com/MrAxenzo 
+```Developers```      
+```| PrinceRudh 😈 github.com/PrinceRudh```
+```| Viz-zer 😈 github.com/Viz-Zer```
+```| MrAxenzo 😈 github.com/MrAxenzo``` 
 `}) 
 
 })); 
