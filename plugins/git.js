@@ -11,22 +11,21 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     var respoimage = await axios.get(config.LOGO, { responseType: 'arraybuffer' })
 
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync('https://telegra.ph/file/24f32f57035641a8698e4.jpg'), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync(''), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
  
-*owner number wa.me/18254138025*
+```owner number wa.me/917736771516```
    
 
-*whatsapp group : https://chat.whatsapp.com/FVOdpPLaMvP24rIfTzCGof*
+```whatsapp group : https://chat.whatsapp.com/GQKFAsYW10VCJqP0pRs4gb```
 
 
-*githublink       _https://tinyurl.com/yjdej5a2_*
+githublink : ```github.com/KINGS-AS/RDX_V2```
 
 
-*audio commads    _https://tinyurl.com/ydvlpbol_*
-
-*Bot Make Video ytube -https://youtu.be/s3ugOuxbQ_Q_*
-
-*sticker commads  _https://tinyurl.com/yfpd23yn_*     
+*Developers*      
+| @PrinceRudh 😈 github.com/PrinceRudh
+| @Viz-zer 😈 github.com/Viz-Zer
+| @MrAxenzo 😈 github.com/MrAxenzo 
 `}) 
 
 })); 
