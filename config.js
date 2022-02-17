@@ -63,7 +63,7 @@ module.exports = {
     OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'PRINCE RUDH' : process.env.OWNER_SHIP,
     LOGO: process.env.LOGO_LINK === undefined ? 'https://i.imgur.com/xihfXRE.jpeg' : process.env.LOGO_LINK,
     BGMD: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
-    BOTV2: process.env.BOTV2_NAME === undefined ? 'PUBLIC BOT'' : process.env.BOTV2_NAME,
+    BOTV2: process.env.BOTV2_NAME === undefined ? 'PUBLIC BOT' : process.env.BOTV2_NAME,
     BOT_AI: process.env.BOT_AI === undefined ? 'false' : process.env.BOT_AI,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ ᴅᴜᴅᴇ' : process.env.ALIVE_BUTTON,
