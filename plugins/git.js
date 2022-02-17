@@ -1,31 +1,19 @@
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
-const config = require('../config');
-const fs = require("fs")
+
 const Language = require('../language');
-const Lang = Language.getString('gitlink');
+const Lang = Language.getString('wallpaper');
 
-Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message, match) => {
+Asena.addCommand({pattern: 'git', fromMe: false, desc: "Gives github link of the bot"}, (async (message, match) => {
 
-    var respoimage = await axios.get(config.LOGO, { responseType: 'arraybuffer' })
+    var skl = await axios.get("https://i.postimg.cc/L4Ctzhvh/Prince-Rudh.jpg", { responseType: 'arraybuffer' })
 
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Github* *(setup)* : *https://github.com/PrinceRudh/Prince-Rudh*
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync(''), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
- 
-```owner number wa.me/917736771516```
-   
+*Audio comnds* : *https://github.com/PrinceRudh/Prince-Rudh/tree/master/uploads*
 
-```whatsapp group : https://chat.whatsapp.com/GQKFAsYW10VCJqP0pRs4gb```
-
-
-githublink : ```github.com/KINGS-AS/RDX_V2```
-
-
-```Developers```      
-```| PrinceRudh 😈 github.com/PrinceRudh```
-```| Viz-zer 😈 github.com/Viz-Zer```
-```| MrAxenzo 😈 github.com/MrAxenzo``` 
+*Sticker cmnds* : *https://github.com/PrinceRudh/Prince-Rudh/tree/master/uploads*
 `}) 
 
-})); 
+}));
