@@ -142,7 +142,7 @@
         "BOTV2_NAME": {
             "description": "heading for bgm command reply",
             "required": false,
-            "value": "ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ʀᴅx ʙᴏᴛ⛧┈♛"
+            "value": "PUBLIC BOT"
         },
         "BGM_DURATION": {
             "description": "FUNY BGM DURATION  codded by SAIDALI",
