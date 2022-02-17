@@ -18,7 +18,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v8.0.0',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.CONNECTION_CODE === undefined ? '' : process.env.CONNECTION_CODE,
+    SESSION: process.env.RDX_SESSION === undefined ? '' : process.env.RDX_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
@@ -30,7 +30,7 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
     OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
-    ALL: process.env.ALL_CAPTION === undefined ? 'Made By RDX V2' : process.env.ALL_CAPTION,
+    ALL: process.env.ALL_CAPTION === undefined ? 'Made By RDX' : process.env.ALL_CAPTION,
     MENTION: process.env.TAG_REPLY === undefined ? '18254138025@s.whatsapp.net' : process.env.TAG_REPLY,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
