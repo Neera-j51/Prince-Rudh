@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *RDX V2*:  ```" + msg + "```"
+    return "✅ *PrinceRudh*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *RDX V2*:  ```" + msg + "```"
+    return "🛑 *PrinceRudh*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *RDX V2*:  ```" + msg + "```"
+    return "⏺️ *PrinceRudh*:  ```" + msg + "```"
 }
 
 
